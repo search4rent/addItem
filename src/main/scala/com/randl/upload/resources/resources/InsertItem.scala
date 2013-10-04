@@ -8,7 +8,7 @@ import javax.ws.rs.core.MediaType._
 import com.randl.upload.resources.model.RentItem
 import com.randl.upload.resources.Indexer
 
-@Path("/search")
+@Path("/updload-service")
 @Produces(Array(APPLICATION_JSON))
 @Consumes(Array(APPLICATION_JSON))
 class InsertItem extends Indexer {
