@@ -8,14 +8,14 @@ import javax.ws.rs.core.MediaType._
 import com.randl.upload.resources.model.RentItem
 import com.randl.upload.resources.Indexer
 
-@Path("/updload-service")
+@Path("/upload-service")
 @Produces(Array(APPLICATION_JSON))
 @Consumes(Array(APPLICATION_JSON))
 class InsertItem extends Indexer {
 
 
   @POST
-  @Path("-/insert/")
+  @Path("-/item/")
   def setItem(rentItem: RentItem) = {
     indexer(rentItem).execute().actionGet()
     Response.ok(rentItem.id).build()

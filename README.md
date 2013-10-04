@@ -1,6 +1,6 @@
 <h2>Insert new Item</h2>
 
-http://line030.de:8181/addItem-0.0.1-SNAPSHOT/updload-service/-/item/
+http://line030.de:8181/addItem/upload-service/-/item/
 
 ```js
 {
